@@ -1,0 +1,804 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Ariel",
+      "author": "Sylvia Plath",
+      "year": 1965,
+      "genres": ["Confessional", "Modern"],
+      "themes": ["Death", "Rebirth", "Femininity", "Mental Health"]
+    },
+    {
+      "id": 2,
+      "title": "The Collected Poems",
+      "author": "Emily Dickinson",
+      "year": 1890,
+      "genres": ["Classic", "Lyric"],
+      "themes": ["Death", "Immortality", "Nature", "Love"]
+    },
+    {
+      "id": 3,
+      "title": "Citizen: An American Lyric",
+      "author": "Claudia Rankine",
+      "year": 2014,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Race", "Identity", "Microaggressions", "Social Justice"]
+    },
+    {
+      "id": 4,
+      "title": "The Complete Poems",
+      "author": "Elizabeth Bishop",
+      "year": 1969,
+      "genres": ["Modern", "Descriptive"],
+      "themes": ["Travel", "Loss", "Observation", "Geography"]
+    },
+    {
+      "id": 5,
+      "title": "Life on Mars",
+      "author": "Tracy K. Smith",
+      "year": 2011,
+      "genres": ["Contemporary", "Narrative"],
+      "themes": ["Grief", "Science Fiction", "Space", "Loss"]
+    },
+    {
+      "id": 6,
+      "title": "The Wild Iris",
+      "author": "Louise Glück",
+      "year": 1992,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Nature", "Spirituality", "Suffering", "Renewal"]
+    },
+    {
+      "id": 7,
+      "title": "Diving into the Wreck",
+      "author": "Adrienne Rich",
+      "year": 1973,
+      "genres": ["Feminist", "Political"],
+      "themes": ["Feminism", "Identity", "Exploration", "Revolution"]
+    },
+    {
+      "id": 8,
+      "title": "The Dream of a Common Language",
+      "author": "Adrienne Rich",
+      "year": 1978,
+      "genres": ["Feminist", "Lesbian Poetry"],
+      "themes": ["Feminism", "Love", "Lesbian Identity", "Sisterhood"]
+    },
+    {
+      "id": 9,
+      "title": "Still I Rise",
+      "author": "Maya Angelou",
+      "year": 1978,
+      "genres": ["Contemporary", "Inspirational"],
+      "themes": ["Resilience", "Black Identity", "Strength", "Empowerment"]
+    },
+    {
+      "id": 10,
+      "title": "I Know Why the Caged Bird Sings",
+      "author": "Maya Angelou",
+      "year": 1969,
+      "genres": ["Autobiographical", "Narrative"],
+      "themes": ["Freedom", "Racism", "Identity", "Coming of Age"]
+    },
+    {
+      "id": 11,
+      "title": "Selected Poems",
+      "author": "Gwendolyn Brooks",
+      "year": 1963,
+      "genres": ["Modern", "Social"],
+      "themes": ["Urban Life", "Black Experience", "Social Issues", "Identity"]
+    },
+    {
+      "id": 12,
+      "title": "The Colossus and Other Poems",
+      "author": "Sylvia Plath",
+      "year": 1960,
+      "genres": ["Confessional", "Modern"],
+      "themes": ["Family", "Mythology", "Nature", "Psychology"]
+    },
+    {
+      "id": 13,
+      "title": "Men in the Off Hours",
+      "author": "Anne Carson",
+      "year": 2000,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Mythology", "Gender", "History", "Philosophy"]
+    },
+    {
+      "id": 14,
+      "title": "Autobiography of Red",
+      "author": "Anne Carson",
+      "year": 1998,
+      "genres": ["Verse Novel", "Experimental"],
+      "themes": ["Love", "Mythology", "Identity", "Desire"]
+    },
+    {
+      "id": 15,
+      "title": "Bright Dead Things",
+      "author": "Ada Limón",
+      "year": 2015,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Love", "Loss", "Nature", "Mortality"]
+    },
+    {
+      "id": 16,
+      "title": "The Carrying",
+      "author": "Ada Limón",
+      "year": 2018,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Womanhood", "Body", "Belonging", "Connection"]
+    },
+    {
+      "id": 17,
+      "title": "Crush",
+      "author": "Richard Siken",
+      "year": 2005,
+      "genres": ["Contemporary", "Confessional"],
+      "themes": ["Desire", "Violence", "Love", "Obsession"]
+    },
+    {
+      "id": 18,
+      "title": "Night Sky with Exit Wounds",
+      "author": "Ocean Vuong",
+      "year": 2016,
+      "genres": ["Contemporary", "Immigrant"],
+      "themes": ["War", "Family", "Queer Identity", "Immigration"]
+    },
+    {
+      "id": 19,
+      "title": "Teaching My Mother How to Give Birth",
+      "author": "Warsan Shire",
+      "year": 2011,
+      "genres": ["Contemporary", "Immigrant"],
+      "themes": ["Migration", "Womanhood", "Violence", "Identity"]
+    },
+    {
+      "id": 20,
+      "title": "The Princess Saves Herself in This One",
+      "author": "Amanda Lovelace",
+      "year": 2016,
+      "genres": ["Contemporary", "Feminist"],
+      "themes": ["Survival", "Feminism", "Trauma", "Empowerment"]
+    },
+    {
+      "id": 21,
+      "title": "Milk and Honey",
+      "author": "Rupi Kaur",
+      "year": 2014,
+      "genres": ["Contemporary", "Feminist"],
+      "themes": ["Healing", "Love", "Trauma", "Femininity"]
+    },
+    {
+      "id": 22,
+      "title": "The Sun and Her Flowers",
+      "author": "Rupi Kaur",
+      "year": 2017,
+      "genres": ["Contemporary", "Feminist"],
+      "themes": ["Growth", "Ancestry", "Love", "Loss"]
+    },
+    {
+      "id": 23,
+      "title": "A Light in the Attic",
+      "author": "Shel Silverstein",
+      "year": 1981,
+      "genres": ["Children's", "Humorous"],
+      "themes": ["Childhood", "Imagination", "Play", "Wonder"]
+    },
+    {
+      "id": 24,
+      "title": "Good Bones",
+      "author": "Maggie Smith",
+      "year": 2017,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Motherhood", "Hope", "Resilience", "Life"]
+    },
+    {
+      "id": 25,
+      "title": "Postcolonial Love Poem",
+      "author": "Natalie Diaz",
+      "year": 2020,
+      "genres": ["Contemporary", "Indigenous"],
+      "themes": ["Indigenous Identity", "Love", "Colonialism", "Language"]
+    },
+    {
+      "id": 26,
+      "title": "Devotions",
+      "author": "Mary Oliver",
+      "year": 2017,
+      "genres": ["Contemporary", "Nature"],
+      "themes": ["Nature", "Spirituality", "Wonder", "Observation"]
+    },
+    {
+      "id": 27,
+      "title": "New and Selected Poems",
+      "author": "Mary Oliver",
+      "year": 1992,
+      "genres": ["Contemporary", "Nature"],
+      "themes": ["Nature", "Solitude", "Beauty", "Presence"]
+    },
+    {
+      "id": 28,
+      "title": "The World According to Fannie Davis",
+      "author": "Bridgett M. Davis",
+      "year": 2019,
+      "genres": ["Contemporary", "Memoir"],
+      "themes": ["Family", "Detroit", "Hustle", "Motherhood"]
+    },
+    {
+      "id": 29,
+      "title": "Don't Call Us Dead",
+      "author": "Danez Smith",
+      "year": 2017,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Black Queer Identity", "Police Violence", "HIV/AIDS", "Survival"]
+    },
+    {
+      "id": 30,
+      "title": "Homie",
+      "author": "Danez Smith",
+      "year": 2020,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Friendship", "Community", "Love", "Black Life"]
+    },
+    {
+      "id": 31,
+      "title": "When My Brother Was an Aztec",
+      "author": "Natalie Diaz",
+      "year": 2012,
+      "genres": ["Contemporary", "Indigenous"],
+      "themes": ["Family", "Addiction", "Indigenous Identity", "Violence"]
+    },
+    {
+      "id": 32,
+      "title": "Deaf Republic",
+      "author": "Ilya Kaminsky",
+      "year": 2019,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["War", "Resistance", "Silence", "Violence"]
+    },
+    {
+      "id": 33,
+      "title": "Whereas",
+      "author": "Layli Long Soldier",
+      "year": 2017,
+      "genres": ["Contemporary", "Indigenous"],
+      "themes": ["Indigenous Rights", "Language", "Colonialism", "Motherhood"]
+    },
+    {
+      "id": 34,
+      "title": "Catalog of Unabashed Gratitude",
+      "author": "Ross Gay",
+      "year": 2015,
+      "genres": ["Contemporary", "Celebratory"],
+      "themes": ["Joy", "Gratitude", "Nature", "Community"]
+    },
+    {
+      "id": 35,
+      "title": "The Tradition",
+      "author": "Jericho Brown",
+      "year": 2019,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Black Identity", "Queer Identity", "Violence", "History"]
+    },
+    {
+      "id": 36,
+      "title": "Incendiary Art",
+      "author": "Patricia Smith",
+      "year": 2017,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Violence", "Black Experience", "History", "Grief"]
+    },
+    {
+      "id": 37,
+      "title": "Blood Dazzler",
+      "author": "Patricia Smith",
+      "year": 2008,
+      "genres": ["Contemporary", "Documentary"],
+      "themes": ["Hurricane Katrina", "Disaster", "Race", "Survival"]
+    },
+    {
+      "id": 38,
+      "title": "Wade in the Water",
+      "author": "Tracy K. Smith",
+      "year": 2018,
+      "genres": ["Contemporary", "Historical"],
+      "themes": ["History", "Race", "Memory", "Archives"]
+    },
+    {
+      "id": 39,
+      "title": "Duende",
+      "author": "Tracy K. Smith",
+      "year": 2007,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Loss", "Spirituality", "Identity", "Longing"]
+    },
+    {
+      "id": 40,
+      "title": "Averno",
+      "author": "Louise Glück",
+      "year": 2006,
+      "genres": ["Contemporary", "Mythological"],
+      "themes": ["Persephone", "Death", "Transformation", "Seasons"]
+    },
+    {
+      "id": 41,
+      "title": "Her Kind",
+      "author": "Anne Sexton",
+      "year": 1960,
+      "genres": ["Confessional", "Feminist"],
+      "themes": ["Womanhood", "Witchcraft", "Rebellion", "Identity"]
+    },
+    {
+      "id": 42,
+      "title": "All the Poems",
+      "author": "Stevie Smith",
+      "year": 1975,
+      "genres": ["Modern", "Dark Humor"],
+      "themes": ["Death", "Isolation", "Whimsy", "Despair"]
+    },
+    {
+      "id": 43,
+      "title": "The Ballad of the Harp-Weaver",
+      "author": "Edna St. Vincent Millay",
+      "year": 1922,
+      "genres": ["Classic", "Narrative"],
+      "themes": ["Motherhood", "Sacrifice", "Poverty", "Love"]
+    },
+    {
+      "id": 44,
+      "title": "A Few Figs from Thistles",
+      "author": "Edna St. Vincent Millay",
+      "year": 1920,
+      "genres": ["Classic", "Feminist"],
+      "themes": ["Independence", "Freedom", "Youth", "Rebellion"]
+    },
+    {
+      "id": 45,
+      "title": "Goblin Market and Other Poems",
+      "author": "Christina Rossetti",
+      "year": 1862,
+      "genres": ["Victorian", "Narrative"],
+      "themes": ["Temptation", "Sisterhood", "Redemption", "Desire"]
+    },
+    {
+      "id": 46,
+      "title": "Aurora Leigh",
+      "author": "Elizabeth Barrett Browning",
+      "year": 1856,
+      "genres": ["Victorian", "Verse Novel"],
+      "themes": ["Art", "Feminism", "Love", "Social Reform"]
+    },
+    {
+      "id": 47,
+      "title": "Sonnets from the Portuguese",
+      "author": "Elizabeth Barrett Browning",
+      "year": 1850,
+      "genres": ["Victorian", "Romantic"],
+      "themes": ["Love", "Devotion", "Romance", "Spirituality"]
+    },
+    {
+      "id": 48,
+      "title": "A Book of Strife in the Form of the Diary of an Old Soul",
+      "author": "George MacDonald",
+      "year": 1880,
+      "genres": ["Victorian", "Spiritual"],
+      "themes": ["Faith", "Struggle", "Devotion", "Redemption"]
+    },
+    {
+      "id": 49,
+      "title": "Observations",
+      "author": "Marianne Moore",
+      "year": 1924,
+      "genres": ["Modern", "Descriptive"],
+      "themes": ["Animals", "Detail", "Innovation", "Modernism"]
+    },
+    {
+      "id": 50,
+      "title": "Tulips & Chimneys",
+      "author": "E.E. Cummings",
+      "year": 1923,
+      "genres": ["Modern", "Experimental"],
+      "themes": ["Love", "Nature", "Innovation", "Form"]
+    },
+    {
+      "id": 51,
+      "title": "The Country Between Us",
+      "author": "Carolyn Forché",
+      "year": 1981,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["War", "El Salvador", "Witness", "Violence"]
+    },
+    {
+      "id": 52,
+      "title": "Native Guard",
+      "author": "Natasha Trethewey",
+      "year": 2006,
+      "genres": ["Contemporary", "Historical"],
+      "themes": ["History", "Race", "Civil War", "Memory"]
+    },
+    {
+      "id": 53,
+      "title": "Thrall",
+      "author": "Natasha Trethewey",
+      "year": 2012,
+      "genres": ["Contemporary", "Historical"],
+      "themes": ["Mixed Race Identity", "History", "Photography", "Memory"]
+    },
+    {
+      "id": 54,
+      "title": "Bellocq's Ophelia",
+      "author": "Natasha Trethewey",
+      "year": 2002,
+      "genres": ["Contemporary", "Historical"],
+      "themes": ["Prostitution", "New Orleans", "Identity", "Exploitation"]
+    },
+    {
+      "id": 55,
+      "title": "Soft Science",
+      "author": "Franny Choi",
+      "year": 2019,
+      "genres": ["Contemporary", "Science Fiction"],
+      "themes": ["Technology", "Body", "Korean American Identity", "Cyborgs"]
+    },
+    {
+      "id": 56,
+      "title": "Olio",
+      "author": "Tyehimba Jess",
+      "year": 2016,
+      "genres": ["Contemporary", "Historical"],
+      "themes": ["Black Performance", "History", "Minstrelsy", "Identity"]
+    },
+    {
+      "id": 57,
+      "title": "Calamities",
+      "author": "Renee Gladman",
+      "year": 2016,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Thought", "Process", "Writing", "Form"]
+    },
+    {
+      "id": 58,
+      "title": "Faithful and Virtuous Night",
+      "author": "Louise Glück",
+      "year": 2014,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Darkness", "Dreams", "Art", "Transformation"]
+    },
+    {
+      "id": 59,
+      "title": "M Archive",
+      "author": "Alexis Pauline Gumbs",
+      "year": 2018,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Black Feminism", "Future", "Archive", "Motherhood"]
+    },
+    {
+      "id": 60,
+      "title": "The Black Unicorn",
+      "author": "Audre Lorde",
+      "year": 1978,
+      "genres": ["Feminist", "Political"],
+      "themes": ["Black Feminism", "African Mythology", "Lesbian Identity", "Power"]
+    },
+    {
+      "id": 61,
+      "title": "The Collected Poems of Audre Lorde",
+      "author": "Audre Lorde",
+      "year": 1997,
+      "genres": ["Feminist", "Political"],
+      "themes": ["Intersectionality", "Justice", "Love", "Resistance"]
+    },
+    {
+      "id": 62,
+      "title": "Coal",
+      "author": "Audre Lorde",
+      "year": 1976,
+      "genres": ["Feminist", "Political"],
+      "themes": ["Black Identity", "Language", "Power", "Transformation"]
+    },
+    {
+      "id": 63,
+      "title": "The School of the Americas",
+      "author": "Brenda Cárdenas",
+      "year": 2012,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Violence", "Latin America", "Protest", "Witness"]
+    },
+    {
+      "id": 64,
+      "title": "Float",
+      "author": "Anne Carson",
+      "year": 2016,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Water", "Mythology", "Form", "Innovation"]
+    },
+    {
+      "id": 65,
+      "title": "Nox",
+      "author": "Anne Carson",
+      "year": 2010,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Grief", "Brother", "Translation", "Loss"]
+    },
+    {
+      "id": 66,
+      "title": "The Beauty",
+      "author": "Jane Hirshfield",
+      "year": 2015,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Beauty", "Transience", "Observation", "Time"]
+    },
+    {
+      "id": 67,
+      "title": "Come, Thief",
+      "author": "Jane Hirshfield",
+      "year": 2011,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Time", "Change", "Wisdom", "Nature"]
+    },
+    {
+      "id": 68,
+      "title": "Given Sugar, Given Salt",
+      "author": "Jane Hirshfield",
+      "year": 2001,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Balance", "Bitterness", "Sweetness", "Acceptance"]
+    },
+    {
+      "id": 69,
+      "title": "The Argonauts",
+      "author": "Maggie Nelson",
+      "year": 2015,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Queer Family", "Theory", "Love", "Motherhood"]
+    },
+    {
+      "id": 70,
+      "title": "Bluets",
+      "author": "Maggie Nelson",
+      "year": 2009,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Color", "Desire", "Loss", "Obsession"]
+    },
+    {
+      "id": 71,
+      "title": "A Little Book on Form",
+      "author": "Robert Hass",
+      "year": 2017,
+      "genres": ["Contemporary", "Craft"],
+      "themes": ["Poetics", "Form", "Tradition", "Innovation"]
+    },
+    {
+      "id": 72,
+      "title": "The Country of Marriage",
+      "author": "Wendell Berry",
+      "year": 1973,
+      "genres": ["Contemporary", "Pastoral"],
+      "themes": ["Marriage", "Land", "Commitment", "Place"]
+    },
+    {
+      "id": 73,
+      "title": "Pilgrim at Tinker Creek",
+      "author": "Annie Dillard",
+      "year": 1974,
+      "genres": ["Contemporary", "Nature"],
+      "themes": ["Nature", "Observation", "Wonder", "Spirituality"]
+    },
+    {
+      "id": 74,
+      "title": "The Truth About Magic",
+      "author": "Atticus",
+      "year": 2019,
+      "genres": ["Contemporary", "Instagram Poetry"],
+      "themes": ["Love", "Loss", "Magic", "Romance"]
+    },
+    {
+      "id": 75,
+      "title": "The Chaos of Longing",
+      "author": "K.Y. Robinson",
+      "year": 2018,
+      "genres": ["Contemporary", "Feminist"],
+      "themes": ["Desire", "Womanhood", "Longing", "Self-Love"]
+    },
+    {
+      "id": 76,
+      "title": "Home Body",
+      "author": "Rupi Kaur",
+      "year": 2020,
+      "genres": ["Contemporary", "Feminist"],
+      "themes": ["Home", "Self", "Peace", "Healing"]
+    },
+    {
+      "id": 77,
+      "title": "The Hurting Kind",
+      "author": "Ada Limón",
+      "year": 2022,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Interconnection", "Nature", "Healing", "Pain"]
+    },
+    {
+      "id": 78,
+      "title": "How We Fight for Our Lives",
+      "author": "Saeed Jones",
+      "year": 2019,
+      "genres": ["Contemporary", "Memoir"],
+      "themes": ["Black Queer Identity", "South", "Family", "Survival"]
+    },
+    {
+      "id": 79,
+      "title": "Prelude to Bruise",
+      "author": "Saeed Jones",
+      "year": 2014,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Black Queer Desire", "Violence", "Body", "Identity"]
+    },
+    {
+      "id": 80,
+      "title": "Opened Ground: Selected Poems 1966-1996",
+      "author": "Seamus Heaney",
+      "year": 1998,
+      "genres": ["Contemporary", "Irish"],
+      "themes": ["Ireland", "History", "Land", "Language"]
+    },
+    {
+      "id": 81,
+      "title": "A Singing in the Dark",
+      "author": "Kate DiCamillo",
+      "year": 2022,
+      "genres": ["Contemporary", "Inspirational"],
+      "themes": ["Hope", "Light", "Darkness", "Resilience"]
+    },
+    {
+      "id": 82,
+      "title": "Calling a Wolf a Wolf",
+      "author": "Kaveh Akbar",
+      "year": 2017,
+      "genres": ["Contemporary", "Confessional"],
+      "themes": ["Addiction", "Recovery", "Faith", "Iranian Identity"]
+    },
+    {
+      "id": 83,
+      "title": "Death-Proof",
+      "author": "Franny Choi",
+      "year": 2016,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Korean American Identity", "Violence", "Survival", "Feminism"]
+    },
+    {
+      "id": 84,
+      "title": "Bestiary",
+      "author": "Donika Kelly",
+      "year": 2016,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Trauma", "Survival", "Mythology", "Black Lesbian Identity"]
+    },
+    {
+      "id": 85,
+      "title": "Goodnight, Irene",
+      "author": "Belle Yang",
+      "year": 2023,
+      "genres": ["Contemporary", "Narrative"],
+      "themes": ["Family", "Chinese American Identity", "History", "War"]
+    },
+    {
+      "id": 86,
+      "title": "Glass, Irony and God",
+      "author": "Anne Carson",
+      "year": 1995,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Religion", "Philosophy", "Irony", "Gender"]
+    },
+    {
+      "id": 87,
+      "title": "The Book of Delights",
+      "author": "Ross Gay",
+      "year": 2019,
+      "genres": ["Contemporary", "Essays"],
+      "themes": ["Joy", "Community", "Observation", "Gratitude"]
+    },
+    {
+      "id": 88,
+      "title": "Heavy: An American Memoir",
+      "author": "Kiese Laymon",
+      "year": 2018,
+      "genres": ["Contemporary", "Memoir"],
+      "themes": ["Body", "Family", "Mississippi", "Weight"]
+    },
+    {
+      "id": 89,
+      "title": "Magical Negro",
+      "author": "Morgan Parker",
+      "year": 2019,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Black Identity", "Pop Culture", "Racism", "Mental Health"]
+    },
+    {
+      "id": 90,
+      "title": "There Are More Beautiful Things Than Beyoncé",
+      "author": "Morgan Parker",
+      "year": 2017,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Black Womanhood", "Pop Culture", "Depression", "Identity"]
+    },
+    {
+      "id": 91,
+      "title": "A Fortune for Your Disaster",
+      "author": "Hanif Abdurraqib",
+      "year": 2019,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Love", "Loss", "Music", "Heartbreak"]
+    },
+    {
+      "id": 92,
+      "title": "The Crown Ain't Worth Much",
+      "author": "Hanif Abdurraqib",
+      "year": 2016,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Black Life", "Violence", "Community", "Survival"]
+    },
+    {
+      "id": 93,
+      "title": "Felon",
+      "author": "Reginald Dwayne Betts",
+      "year": 2019,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Incarceration", "Justice", "Redemption", "Black Life"]
+    },
+    {
+      "id": 94,
+      "title": "Bastards of the Reagan Era",
+      "author": "Reginald Dwayne Betts",
+      "year": 2015,
+      "genres": ["Contemporary", "Political"],
+      "themes": ["Prison", "Coming of Age", "Black Youth", "System"]
+    },
+    {
+      "id": 95,
+      "title": "Ordinary Beast",
+      "author": "Nicole Sealey",
+      "year": 2017,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Animals", "Humanity", "Observation", "Identity"]
+    },
+    {
+      "id": 96,
+      "title": "The New Black",
+      "author": "Evie Shockley",
+      "year": 2011,
+      "genres": ["Contemporary", "Experimental"],
+      "themes": ["Black Identity", "Form", "Innovation", "History"]
+    },
+    {
+      "id": 97,
+      "title": "Corridor",
+      "author": "Melissa Broder",
+      "year": 2022,
+      "genres": ["Contemporary", "Surreal"],
+      "themes": ["Longing", "Desire", "Mysticism", "Body"]
+    },
+    {
+      "id": 98,
+      "title": "Last Sext",
+      "author": "Melissa Broder",
+      "year": 2016,
+      "genres": ["Contemporary", "Surreal"],
+      "themes": ["Technology", "Desire", "Loneliness", "Internet"]
+    },
+    {
+      "id": 99,
+      "title": "Please",
+      "author": "Jericho Brown",
+      "year": 2008,
+      "genres": ["Contemporary", "Lyric"],
+      "themes": ["Desire", "Black Identity", "Family", "South"]
+    },
+    {
+      "id": 100,
+      "title": "The Book of Medicines",
+      "author": "Linda Hogan",
+      "year": 1993,
+      "genres": ["Contemporary", "Indigenous"],
+      "themes": ["Chickasaw Heritage", "Healing", "Environment", "Spirituality"]
+    }
+  ]
+}

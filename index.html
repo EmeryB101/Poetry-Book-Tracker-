@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track and rate poetry books by female authors">
+    <title>Female Poetry Book Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Female Poetry Book Tracker</h1>
+            <p class="subtitle">Discover and track classic and modern poetry by women writers</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search by title or author..."
+                        aria-label="Search books"
+                    >
+                </div>
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="genreFilter">Genre:</label>
+                        <select id="genreFilter" aria-label="Filter by genre">
+                            <option value="">All Genres</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="themeFilter">Theme:</label>
+                        <select id="themeFilter" aria-label="Filter by theme">
+                            <option value="">All Themes</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="statusFilter">Status:</label>
+                        <select id="statusFilter" aria-label="Filter by reading status">
+                            <option value="">All Books</option>
+                            <option value="read">Read</option>
+                            <option value="unread">Not Read</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sortBy">Sort By:</label>
+                        <select id="sortBy" aria-label="Sort books">
+                            <option value="title">Title (A-Z)</option>
+                            <option value="author">Author (A-Z)</option>
+                            <option value="year">Year (Oldest First)</option>
+                            <option value="year-desc">Year (Newest First)</option>
+                            <option value="rating">My Rating (High to Low)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="resetFilters" class="btn-reset">Reset Filters</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalBooks">0</span>
+                    <span class="stat-label">Total Books</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="booksRead">0</span>
+                    <span class="stat-label">Books Read</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="averageRating">-</span>
+                    <span class="stat-label">Avg Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="bookGrid" class="book-grid" role="list">
+            <!-- Books will be dynamically inserted here -->
+        </section>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No books found matching your criteria.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Celebrating poetry by women writers | Data stored locally in your browser</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
