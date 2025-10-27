@@ -15,6 +15,8 @@ const noResults = document.getElementById('noResults');
 const totalBooksEl = document.getElementById('totalBooks');
 const booksReadEl = document.getElementById('booksRead');
 const averageRatingEl = document.getElementById('averageRating');
+const recommendationsSection = document.getElementById('recommendationsSection');
+const recommendationsGrid = document.getElementById('recommendationsGrid');
 
 // ===== LOCAL STORAGE FUNCTIONS =====
 function loadUserData() {
@@ -41,6 +43,7 @@ function setUserBookData(bookId, data) {
     userData[bookId] = { ...getUserBookData(bookId), ...data };
     saveUserData();
     updateStats();
+    updateRecommendations();
 }
 
 // ===== DATA LOADING =====
@@ -54,6 +57,7 @@ async function loadBooks() {
         populateFilters();
         renderBooks();
         updateStats();
+        updateRecommendations();
     } catch (error) {
         console.error('Error loading books:', error);
         bookGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Error loading books. Please refresh the page.</p>';
@@ -329,6 +333,134 @@ function updateStats() {
     } else {
         averageRatingEl.textContent = '-';
     }
+}
+
+// ===== RECOMMENDATIONS =====
+function generateRecommendations() {
+    // Get all books with ratings of 4 or 5 stars
+    const highlyRatedBooks = allBooks.filter(book => {
+        const rating = getUserBookData(book.id).rating;
+        return rating >= 4;
+    });
+
+    // If no highly rated books, don't show recommendations
+    if (highlyRatedBooks.length === 0) {
+        return [];
+    }
+
+    // Collect genres and themes from highly rated books
+    const preferredGenres = {};
+    const preferredThemes = {};
+
+    highlyRatedBooks.forEach(book => {
+        const rating = getUserBookData(book.id).rating;
+        const weight = rating; // 4 or 5 star weight
+
+        book.genres.forEach(genre => {
+            preferredGenres[genre] = (preferredGenres[genre] || 0) + weight;
+        });
+
+        book.themes.forEach(theme => {
+            preferredThemes[theme] = (preferredThemes[theme] || 0) + weight;
+        });
+    });
+
+    // Score all unread books based on matching genres/themes
+    const unreadBooks = allBooks.filter(book => {
+        const userData = getUserBookData(book.id);
+        return !userData.read; // Not marked as read
+    });
+
+    const scoredBooks = unreadBooks.map(book => {
+        let score = 0;
+
+        // Add points for matching genres
+        book.genres.forEach(genre => {
+            if (preferredGenres[genre]) {
+                score += preferredGenres[genre] * 2; // Genres weighted more heavily
+            }
+        });
+
+        // Add points for matching themes
+        book.themes.forEach(theme => {
+            if (preferredThemes[theme]) {
+                score += preferredThemes[theme];
+            }
+        });
+
+        return {
+            book,
+            score
+        };
+    });
+
+    // Sort by score and return top 6
+    scoredBooks.sort((a, b) => b.score - a.score);
+    return scoredBooks.slice(0, 6).filter(item => item.score > 0);
+}
+
+function updateRecommendations() {
+    const recommendations = generateRecommendations();
+
+    if (recommendations.length === 0) {
+        recommendationsSection.style.display = 'none';
+        return;
+    }
+
+    recommendationsSection.style.display = 'block';
+    recommendationsGrid.innerHTML = recommendations.map(({ book, score }) => {
+        const userBookData = getUserBookData(book.id);
+        const rating = userBookData.rating;
+
+        return `
+            <div class="recommendation-card book-card" data-book-id="${book.id}" role="listitem">
+                <div class="book-header">
+                    <h2 class="book-title">${escapeHtml(book.title)}</h2>
+                    <p class="book-author">${escapeHtml(book.author)}</p>
+                    <p class="book-year">${book.year}</p>
+                    <span class="recommendation-score">${Math.round(score)}% Match</span>
+                </div>
+
+                <div class="book-genres">
+                    <div class="tag-container">
+                        ${book.genres.map(genre => `<span class="tag genre-tag">${escapeHtml(genre)}</span>`).join('')}
+                    </div>
+                </div>
+
+                <div class="book-themes">
+                    <div class="tag-container">
+                        ${book.themes.map(theme => `<span class="tag theme-tag">${escapeHtml(theme)}</span>`).join('')}
+                    </div>
+                </div>
+
+                <div class="book-actions">
+                    <div class="rating-section">
+                        <span class="rating-label">Your Rating:</span>
+                        <div class="stars" data-book-id="${book.id}">
+                            ${[1, 2, 3, 4, 5].map(star =>
+                                `<span class="star ${star <= rating ? 'active' : ''}" data-rating="${star}" tabindex="0" role="button" aria-label="Rate ${star} stars">★</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+
+                    <div class="read-status">
+                        <div class="checkbox-wrapper">
+                            <input
+                                type="checkbox"
+                                id="read-${book.id}"
+                                data-book-id="${book.id}"
+                                ${userBookData.read ? 'checked' : ''}
+                            >
+                            <label for="read-${book.id}">Mark as Read</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Reattach event listeners for recommendation cards
+    attachEventListeners();
 }
 
 // ===== EVENT LISTENERS SETUP =====

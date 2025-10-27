@@ -182,6 +182,79 @@ main {
     font-weight: 500;
 }
 
+/* ===== RECOMMENDATIONS SECTION ===== */
+.recommendations-section {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(124, 58, 237, 0.2);
+}
+
+.recommendations-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.recommendations-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.recommendations-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.recommendation-card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px var(--shadow);
+    transition: var(--transition);
+    border: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.recommendation-card::before {
+    content: "★ Recommended";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px var(--shadow-hover);
+}
+
+.recommendation-score {
+    display: inline-block;
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
 /* ===== BOOK GRID ===== */
 .book-grid {
     display: grid;
@@ -384,6 +457,14 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations-section {
+        padding: 1.5rem;
+    }
+
     .stats {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
@@ -407,11 +488,19 @@ footer p {
         padding: 1rem;
     }
 
+    .recommendations-section {
+        padding: 1rem;
+    }
+
     .stats {
         grid-template-columns: 1fr;
     }
 
     .book-card {
+        padding: 1.25rem;
+    }
+
+    .recommendation-card {
         padding: 1.25rem;
     }
 }
