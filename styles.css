@@ -307,6 +307,26 @@ main {
     font-weight: 500;
 }
 
+.book-haiku {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.03) 0%, rgba(236, 72, 153, 0.03) 100%);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.haiku-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    font-style: italic;
+    white-space: pre-line;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+
 .book-genres,
 .book-themes {
     margin: 0.75rem 0;
