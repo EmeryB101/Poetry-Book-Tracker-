@@ -124,6 +124,10 @@ function createBookCard(book) {
                 <p class="book-year">${book.year}</p>
             </div>
 
+            <div class="book-haiku">
+                <p class="haiku-text">${escapeHtml(book.haiku)}</p>
+            </div>
+
             <div class="book-genres">
                 <div class="tag-container">
                     ${book.genres.map(genre => `<span class="tag genre-tag">${escapeHtml(genre)}</span>`).join('')}
@@ -419,6 +423,10 @@ function updateRecommendations() {
                     <p class="book-author">${escapeHtml(book.author)}</p>
                     <p class="book-year">${book.year}</p>
                     <span class="recommendation-score">${Math.round(score)}% Match</span>
+                </div>
+
+                <div class="book-haiku">
+                    <p class="haiku-text">${escapeHtml(book.haiku)}</p>
                 </div>
 
                 <div class="book-genres">
